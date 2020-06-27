@@ -1,4 +1,10 @@
-# Creational Patterns
+![alt text](https://res.cloudinary.com/lajosneto/image/upload/v1593301118/patterns-101/pattern-creational.png)
+
+_"In software engineering, creational design patterns are design patterns that deal with object creation mechanisms, trying to create objects in a manner suitable to the situation. The basic form of object creation could result in design problems or in added complexity to the design. Creational design patterns solve this problem by somehow controlling this object creation._
+
+_Creational design patterns are composed of two dominant ideas. One is encapsulating knowledge about which concrete classes the system uses. Another is hiding how instances of these concrete classes are created and combined._
+
+_Creational design patterns are further categorized into object-creational patterns and Class-creational patterns, where Object-creational patterns deal with Object creation and Class-creational patterns deal with Class-instantiation. In greater details, Object-creational patterns defer part of its object creation to another object, while Class-creational patterns defer its object creation to subclasses."_ - [Wikipedia](https://en.wikipedia.org/wiki/Creational_pattern)
 
 ![alt text](https://res.cloudinary.com/lajosneto/image/upload/c_scale,w_686/v1593300689/patterns-101/focus.png)
 
