@@ -5,7 +5,7 @@
 
 _**"Provide an interface for creating families of related or dependent objects without specifying their concrete classes"**_ - GoF
 
-The abstract factory pattern has the main goal of ecapsulating individual factories that have a common behaviour, thus not being necessary the understanding of their concrete implementations from the client using them. It is almost like a _factory that produces other factories_ with the same behaviour.
+The abstract factory pattern, aka "Kit", has the main goal of ecapsulating individual factories that have a common behaviour, thus not being necessary the understanding of their concrete implementations from the client using them. It is almost like a _factory that produces other factories_ with the same behaviour.
 
 <br>
 
@@ -34,6 +34,18 @@ The keypoint from the abstract factory pattern is that users create factories fo
 <br>
 
 ![alt text](https://res.cloudinary.com/lajosneto/image/upload/c_scale,w_686/v1593300689/patterns-101/prosandcons.png)
+
+### Pros
+- The concrete code/classes are completely isolated from the user during the instantiation process, once a factory encapsulates the responsability and the process of creating objects
+- Objects instances are manipulated through their abstract interfaces, isolating the user from the necessity of understanding the details of the concrete implementation, avoiding __tight coupling__.
+- Classes names do not appear in client code : a user treats a shield as a shield, not as a TribeAShield, once all shields variants follow the same interface.
+- Naming refactor is easier : as an equipment variant class name only appears at its related factory, we dot not need to update its name across the client code, we only update the factory in charge of its creation.
+- When the desired behaviour is to maintain the consistency across all ibjects (belonging to the same variant), the abstract factory makes it easier.
+- Single Responsibility Principle - all object creation code is concentrated in one place
+- Open/Closed Principle - it is easier to add new product variants without breaking existing client code
+
+### Cons
+- Adding new kinds of equipments or removing existing ones for example, is not easy. Adding/removing an equipment makes it necessary to update factories interfaces and all concrete subclasses that implement them.
 
 <br>
 
